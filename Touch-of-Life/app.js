@@ -6,7 +6,7 @@ const app = express();
 const mongoose = require('mongoose');
 const passport = require('passport');
 const session = require('express-session')
-const uri = "mongodb+srv://TOF:TOF1761@cluster0.mzkc4h3.mongodb.net/?retryWrites=true&w=majority"
+const uri = ""
 async function connect() {
     try {
         await mongoose.connect(uri);
