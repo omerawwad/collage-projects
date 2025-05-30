@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: peru;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.forms-section {
+    display: grid;
+    justify-items: center;
+}
+
+.forms {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    gap: 10px;
+    height: fit-content;
+    padding: 5px;
+}
+
+
+/* Cards style */
+
+.card {
+    padding: 10px;
+    background: transparent;
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    position: relative;
+    filter: drop-shadow(0 0 2px #000000);
+    border-radius: 5px;
+    width: 600px;
+    height: fit-content;
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.form img {
+    margin: 10px;
+    position: relative;
+    height: 300px;
+    width: 500px;
+    cursor: pointer;
+}
+
+.form input {
+    outline: 0;
+    background: #f2f2f2;
+    border-radius: 4px;
+    width: 100%;
+    border: 0;
+    margin: 15px 0;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.form input:focus {
+    box-shadow: 0 0 5px 0 rgba(106, 98, 210);
+}
+
+span {
+    color: red;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.form button {
+    outline: 0;
+    background: peru;
+    width: 100%;
+    border: 0;
+    margin-top: 10px;
+    border-radius: 3px;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 15px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+    background: black;
+    color: #fff;
+}
+
+.message {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.form .message a {
+    font-size: 14px;
+    color: #6a62d2;
+    text-decoration: none;
+}
+
+
+/* End of Sections and Cards style */
+
+
+/* Slide Show */
+
+
+/* slider container */
+
+.slider {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: relative;
+    margin: 5px auto;
+    max-width: 600px;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: block;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    /* user-select: none; */
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Number text */
+
+.numbertext {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* End of Slide Show */
+
+
+/* Footer style */
+
+footer {
+    font-family: monospace;
+    background: #FFEBAD;
+    color: black;
+    position: relative;
+    padding: 1rem;
+    bottom: 0;
+    margin-top: auto;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts_bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.clogo {
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+footer ul {
+    padding: 10px;
+    display: flex;
+    width: auto;
+    margin-left: auto;
+    align-content: center;
+}
+
+footer ul li {
+    padding: 10px;
+    list-style: none;
+    color: black;
+}
+
+
+/* End of Footer style */

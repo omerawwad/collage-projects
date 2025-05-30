@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    font-family: monospace;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+}
+
+canvas {
+    /* display: block; */
+    height: 270px;
+}
+
+
+/* Slide Show */
+
+
+/* slider container */
+
+.slider {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: relative;
+    margin: 40px auto;
+    max-width: 600px;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: block;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    /* user-select: none; */
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Number text */
+
+.numbertext {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* End of Slide Show */
+
+
+/* service section start */
+
+.service-grid {
+    height: fit-content;
+    width: auto;
+}
+
+.container {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+.row {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.block {
+    height: fit-content;
+    padding: 10px;
+    width: 400px;
+    background-color: burlywood;
+}
+
+.service-title h4 {
+    position: relative;
+    display: inline-block;
+}
+
+.service-icon {
+    position: relative;
+}
+
+.service-title p {
+    padding: 0 190px;
+    margin-bottom: 10px;
+}
+
+.about-info-text h2 {
+    margin-bottom: 23px;
+    text-transform: capitalize;
+    font-weight: 700;
+    line-height: .9;
+}
+
+.about-info-text p {
+    padding: 0 100px;
+    font-size: 18px;
+    margin-bottom: 26px;
+    position: relative;
+}
+
+.about-content p {
+    margin-bottom: 0;
+}
+
+.about-info-text a {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.service-icon i {
+    font-size: 40px;
+    color: #e8bc00;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.service-wrap {
+    border: 1px solid #e6e6e6;
+    padding: 50px 30px;
+    position: relative;
+}
+
+.service-wrap p {
+    position: relative;
+}
+
+#donate:hover {
+    background-image: url(../imgs/service/donation.jpg);
+}
+
+#adopt:hover {
+    background-image: url(../imgs/service/adopt_pet.jpg);
+}
+
+.service-wrap:hover {
+    /* background-image: url(../imgs/service/donation.jpg); */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: local;
+    transition: all .5s;
+}
+
+.service-wrap:hover:before {
+    background: rgba(0, 0, 0, 0.2901960784313726);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    content: "";
+    top: 0;
+    opacity: 1;
+}
+
+.service-wrap:hover h4,
+.service-wrap:hover p {
+    color: #fff;
+}
+
+.service-wrap h4 {
+    font-weight: 600;
+    color: #1e2331;
+    margin-bottom: 17px;
+    font-size: 18px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.service-wrap a {
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+}
+
+
+/* service end */

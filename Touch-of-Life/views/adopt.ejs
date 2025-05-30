@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adopt</title>
+    <link rel="stylesheet" type="text/css" href="../css/adopt.css">
+    <link rel="stylesheet" type="text/css" href="../css/general.css">
+    <script type="text/javascript" src="../js/adopt.js"></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <div class="text_logo">
+            <h2>Touch of Life Organization</h2>
+        </div>
+
+        <nav class="links" style="--items: 2;">
+            <a onclick="location.href='/'" type="button">Home</a>
+            <a onclick="location.href='/admin'" type="button">Admin page</a>
+            <span class="line"></span>
+        </nav>
+    </div>
+
+    <div class="card">
+        <div class="form">
+            <form action="/farm" target=”_blank”>
+                <div>
+                    <img class="card_photo" src="../imgs/pics/playground.jpg" alt="my portrait">
+                </div>
+                <p>
+                    Click here to see all available animals
+                </p>
+                <button type="submit">search Our Farm :) 🌍💛</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="form">
+            <!-- <form action="/adoptrequest"  method="POST">
+                <p>
+                    if you would like to adopt me  🐕 🐕
+                </p>
+                <p>Enter the following information</p>
+                <input type="text" required placeholder="my Animal ID" id="id" autocomplete="off" />
+                <input type="text" required placeholder="Your Name" id="your_name" autocomplete="off" />
+                <input type="text" required placeholder="your Phone Number" id="phone_number" autocomplete="off" />
+                <button type="submit">Adopt</button>
+            </form> -->
+
+
+            <form action="/adoptrequest" method="post">
+
+
+                <p>
+                    if you would like to adopt me 🐕 🐕
+                </p>
+                <p>Enter the following information</p>
+
+                <input type="text" id="animalid" name="animalid" placeholder="animal id" />
+                <input type="text" id="name" name="name" placeholder="your name" />
+                <input type="text" id="phone_number" name="phone_number" placeholder="phone number" />
+
+                <button type="submit">Adopt</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p id="contact">Contact us here!</p>
+        <div class="contacts_bar">
+            <a href="https://web.facebook.com/TOLAnimalSanctuary/about"> <img class="clogo" src="../imgs/icons/fb.png" alt="Facebook"> </a>
+            <a href=""> <img class="clogo" src="../imgs/icons/email.png" alt="Email"> </a>
+            <a href=""> <img class="clogo" src="../imgs/icons/phone.png" alt="Telephone"> </a>
+        </div>
+        <p>TOUCH OF LIFE Organization Reg.nr 2897 - 03/5/07 Ministry of Social Affairs Giza- EGYPT
+        </p>
+    </footer>
+
+</body>
+
+</html>

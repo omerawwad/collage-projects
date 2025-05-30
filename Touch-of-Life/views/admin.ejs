@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/general.css">
+    <link rel="stylesheet" type="text/css" href="../css/admin.css">
+    <script type="text/javascript" src="../js/admin.js"></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <div class="text_logo">
+            <h2>Touch of Life Organization</h2>
+        </div>
+
+        <nav class="links" style="--items: 4;">
+            <a href="/">Home</a>
+            <a href="/areqs">Requests</a>
+            <a href="/farm">Animals</a>
+            <a>
+                <form action="/logout" method="post">
+                    <button name="logout" value="logout">logout</button>
+                </form>
+            </a>
+            <span class="line"></span>
+        </nav>
+    </div>
+
+    <div class="forms-section">
+        <div class="forms">
+
+            <div class="card">
+                <div class="form">
+                    <form action="/admin" method="post">
+                        <h2>Delete Form</h2>
+                        <input type="text" id="animalid" name="animalid" placeholder="animal id" />
+                        <button type="submit" value="del" name="addordel">DELETE</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="form">
+                    <form action="/admin" method="post">
+                        <h2>Insert Form</h2>
+                        <input type="text" id="animalName" name="animalName" placeholder="animal name" />
+                        <input type="text" id="animalSpecie" name="animalSpecie" placeholder="animal Specie" />
+                        <input type="text" id="animalBreed" name="animalBreed" placeholder="animal Breed" />
+                        <input type="text" id="imgurl" name="imgurl" placeholder="imgurl" />
+                        <button type="submit" value="add" name="addordel">ADD</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p id="contact">Contact us here!</p>
+        <div class="contacts_bar">
+            <a href="https://web.facebook.com/TOLAnimalSanctuary/about"> <img class="clogo" src="../imgs/icons/fb.png" alt="Facebook"> </a>
+            <a href=""> <img class="clogo" src="../imgs/icons/email.png" alt="Email"> </a>
+            <a href=""> <img class="clogo" src="../imgs/icons/phone.png" alt="Telephone"> </a>
+        </div>
+        <p>TOUCH OF LIFE Organization Reg.nr 2897 - 03/5/07 Ministry of Social Affairs Giza- EGYPT
+        </p>
+    </footer>
+
+</body>
+
+</html>

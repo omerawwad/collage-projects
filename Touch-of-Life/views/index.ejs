@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/general.css">
+    <script type="text/javascript" src="../js/index.js"></script>
+
+</head>
+
+<body>
+
+    <div class="topnav">
+        <div class="text_logo">
+            <h2>Touch of Life Organization</h2>
+        </div>
+
+        <nav class="links" style="--items: 6;">
+            <a href="/" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#service">Service</a>
+            <a href="#donate">Contribute</a>
+            <a href="#contact">Contacts</a>
+            <a href="/admin">Admin?</a>
+            <span class="line"></span>
+        </nav>
+    </div>
+
+    <div class="card" id="about">
+        <canvas id="canvas3d"></canvas>
+        <!-- Import maps polyfill -->
+        <!-- Remove this when import maps will be widely supported -->
+        <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+        <script type="importmap">
+            { "imports": { "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.214/build/runtime.js" } }
+        </script>
+        <script type="module" src="../js/spline.js"></script>
+    </div>
+
+
+    <div class="card" id="about">
+        <div class="form">
+            <div>
+                <p>
+                    We are dedicated to eliminate animal suffering in Egypt.
+                    <br> Touch of Life Organization is a Registered Charitable Organization.
+                    <br> Established by a Board of Humanitarians Presided and Managed by a French Expat who was especially horrified by the miserable state in which animals had to live here (Egypt).
+                </p>
+            </div>
+            <div>
+                <img class="card_photo" src="../imgs/profile/TOFLogo.png" alt="my portrait">
+            </div>
+        </div>
+    </div>
+
+    <div class="card" id="service">
+        <div class="form">
+            <div>
+                <img class="card_photo" src="../imgs/service/handshake.jpg" alt="my portrait">
+            </div>
+            <div class="card_text">
+                <p>If you are willing to help us and the animals you can donate or/and adopt just by following the links below</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="service-grid">
+        <div class="container">
+            <div class="row">
+
+                <div class="block">
+                    <div class="service-wrap" id="donate">
+                        <div class="service-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>Donate</h3>
+                        <p>Know what the animals need and aid them by donating!</p>
+                        <button onclick="location.href='/payment'" type="button">Donate 50 EGP</button>
+                        <button onclick="location.href='/payment200'" type="button">Donate 200 EGP</button>
+                        <button onclick="location.href='/payment500'" type="button">Donate 500 EGP</button>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="service-wrap" id="adopt">
+                        <div class="service-icon">
+                            <i class="far fa-chart-bar"></i>
+                        </div>
+                        <h3>Adopt</h3>
+                        <p>If you are an animal lover and loved one of our animals and beleive you can take care of it</p>
+
+                        <button onclick="location.href='/adopt'" type="button">
+                            Adopt</button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--* slider cntr -->
+    <div class="slider">
+        <div class="slideshow-container">
+            <a class="prev" onclick="prevClick()">&#10094;</a>
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <!-- <div id="slidenum" class="numbertext"></div> -->
+                <img id="slidepic" src="../imgs/pics/cover.jpg" alt="pic" style="width:100%">
+            </div>
+            <a class="next" onclick="nextClick()">&#10095;</a>
+        </div>
+    </div>
+    <!-- slider end -->
+
+    <div class="card">
+        <div class="form">
+            <div>
+                <p>
+                    Feel free to ask us
+                </p>
+            </div>
+            <div>
+                <img class="card_photo" src="../imgs/profile/TOFLogo.png" alt="my portrait">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p id="contact">Contact us here!</p>
+        <div class="contacts_bar">
+            <a href="https://web.facebook.com/TOLAnimalSanctuary/about"> <img class="clogo" src="../imgs/icons/fb.png" alt="Facebook"> </a>
+            <a href=""> <img class="clogo" src="../imgs/icons/email.png" alt="Email"> </a>
+            <a href=""> <img class="clogo" src="../imgs/icons/phone.png" alt="Telephone"> </a>
+        </div>
+        <p>TOUCH OF LIFE Organization Reg.nr 2897 - 03/5/07 Ministry of Social Affairs Giza- EGYPT
+        </p>
+    </footer>
+
+</body>
+
+</html>

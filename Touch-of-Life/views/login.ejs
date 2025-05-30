@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Login Form </title>
+
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/login.js"></script>
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="form">
+            <form class="login-form " action="/login" method="post">
+                <h2>ADMIN SIGN IN</h2>
+                <input type="text" required placeholder="Username" id="email" name="email" autocomplete="off" />
+                <input oninput="return formvalid()" type="password" required placeholder="Password" id="password" name="password" autocomplete="off" />
+                <!-- <img src="https://cdn2.iconfinder.com/data/icons/basic-ui-interface-v-2/32/hide-512.png"
+                    onclick="show()" id="showimg"> -->
+                <span id="vaild-pass"></span>
+                <button type="submit">SIGN IN</button>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
